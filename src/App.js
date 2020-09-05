@@ -8,16 +8,16 @@ import "./App.css";
 import { Router, Switch, Route, useParams } from 'react-router-dom';
 import Search from './pages/Search';
 import History from './utils/History';
-import Navbar from './components/navbar/Navbar';
+import Navbar from './components/Navbar/Navbar.js';
 // import { unmountComponentAtNode } from "react-dom";
 
 function App() {
-    return(
+    return (
         <>
             <Router history={History}>
                 <Navbar />
                 <Switch>
-                    <Route path='/page/search' component={Search} />
+                    <Route path='/' component={Search} />
                 </Switch>
             </Router>
         </>
